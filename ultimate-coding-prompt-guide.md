@@ -2,6 +2,7 @@
 This is a companion document to go along with my AI Coding 101 video. This document contains all the prompts discussed in the video - though I suggest you watch the video for all of the additional context and explanation that relates to these prompts and tips.
 
 You can watch the full video here:
+
 [![AI Coding 101: Ultimate Prompt Guide](https://img.youtube.com/vi/uwA3MMYBfAQ/0.jpg)](https://youtu.be/uwA3MMYBfAQ)
 > 🎥 AI Coding 101: Ultimate Prompt Guide (37 tips)
 
