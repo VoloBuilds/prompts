@@ -36,6 +36,8 @@ Claude Sonnet, GitHub Copilot) to accelerate learning, development, and troubles
  
 - ultimate-coding-prompt-guide.md: Added Next.js-specific frontend prompt template with SSR/SSG, dynamic routing, and testing guidelines.
 
+- ultimate-coding-prompt-guide.md: Split the monolithic guide into four scenario-specific files (`writing-new-code.md`, `modifying-existing-code.md`, `troubleshooting.md`, `learning-to-code-guide.md`), and refactored `ultimate-coding-prompt-guide.md` into an index linking to them.
+
 ## Contributing
 
 Contributions, issues, and suggestions are welcome! To contribute:
