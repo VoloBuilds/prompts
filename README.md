@@ -50,5 +50,4 @@ Please follow the existing style and guidelines when adding or modifying prompts
 
 ## License
 
-This repository is currently unlicensed. Please contact the repository owner for permissions
-to use or modify the content.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
