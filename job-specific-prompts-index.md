@@ -2,6 +2,16 @@
 
 A comprehensive collection of AI prompts tailored for different software engineering roles and specializations. Each guide contains role-specific scenarios, best practices, and optimized prompts to accelerate development and solve common challenges.
 
+## Foundational Communication Guide
+
+### Essential for All Developers
+- **[LLM Communication Techniques for Developers](llm-communication-techniques-for-developers.md)** - Master effective communication with AI assistants
+  - CLEAR framework and STAR method for structured prompts
+  - Context management and progressive disclosure techniques
+  - Debugging and troubleshooting communication patterns
+  - Architecture discussions and collaborative problem solving
+  - Advanced techniques like Socratic method and rubber duck debugging
+
 ## Available Guides
 
 ### Frontend Development
@@ -26,6 +36,14 @@ A comprehensive collection of AI prompts tailored for different software enginee
   - Real-time features with Socket.io
   - RESTful API development and GraphQL
   - Authentication, middleware, and deployment
+
+### Blockchain & Web3
+- **[Blockchain Architect](blockchain-architect-prompts.md)** - Complete guide for Blockchain Architects and Web3 developers
+  - Blockchain architecture design and technology stack selection
+  - Smart contract architecture and DeFi protocol design
+  - Consensus mechanisms and scalability solutions
+  - Security, cryptography, and interoperability
+  - Infrastructure, governance, and tokenomics
 
 ### Design & User Experience
 - **[UI Designer (Figma)](ui-designer-figma-prompts.md)** - Complete guide for UI Designers using Figma
@@ -52,6 +70,15 @@ A comprehensive collection of AI prompts tailored for different software enginee
   - Product strategy, roadmapping, and go-to-market
   - Data analysis, metrics, and stakeholder communication
 
+### Human Resources & Talent
+- **[HR Manager (Hiring & Recruitment)](hr-manager-hiring-prompts.md)** - Comprehensive guide for HR Managers
+  - Job description creation and optimization
+  - Talent sourcing and recruitment strategies
+  - Interview process design and candidate assessment
+  - Employer branding and diversity initiatives
+  - Compensation strategy and onboarding processes
+  - Recruitment analytics and legal compliance
+
 ### Coming Soon
 - **Python Backend Engineer** (Django/FastAPI)
 - **DevOps Engineer** (Docker, Kubernetes, CI/CD)
@@ -62,21 +89,33 @@ A comprehensive collection of AI prompts tailored for different software enginee
 
 ## How to Choose the Right Guide
 
+### Start with Communication Fundamentals
+**All developers should begin with**: [LLM Communication Techniques](llm-communication-techniques-for-developers.md)
+- Learn to structure thoughts clearly and concisely
+- Master prompt engineering for technical scenarios
+- Understand context management strategies
+- Practice effective debugging communication
+- Develop collaborative problem-solving skills
+
 ### By Technology Stack
 - **React/Next.js Frontend** → [Frontend React/Next.js Guide](frontend-react-nextjs-prompts.md)
 - **Rust + Actix-web Backend** → [Rust Backend Guide](rust-backend-engineer-prompts.md)
 - **Node.js + Sails.js Backend** → [Node.js Sails.js Guide](nodejs-sailsjs-backend-prompts.md)
+- **Blockchain/Web3 Development** → [Blockchain Architect Guide](blockchain-architect-prompts.md)
 - **Figma Design** → [UI Designer Figma Guide](ui-designer-figma-prompts.md)
 - **Pytest Testing** → [Test Engineer Pytest Guide](test-engineer-pytest-prompts.md)
 - **Product Management** → [Product Manager Guide](product-manager-prompts.md)
+- **HR & Recruitment** → [HR Manager Guide](hr-manager-hiring-prompts.md)
 - **Python Backend** → Coming soon
 
 ### By Role Responsibilities
 - **Frontend Focus**: UI/UX, component development, state management
 - **Backend Focus**: APIs, databases, authentication, performance
+- **Blockchain Focus**: Smart contracts, DeFi protocols, consensus mechanisms
 - **Design Focus**: Prototyping, design systems, user experience
 - **Testing Focus**: Test automation, quality assurance, CI/CD
 - **Product Management**: Strategy, research, prototyping, stakeholder communication
+- **HR & Talent**: Hiring, recruitment, job descriptions, candidate assessment
 - **Full-Stack**: Use both frontend and backend guides
 - **DevOps Focus**: Infrastructure, deployment, monitoring
 
@@ -84,74 +123,94 @@ A comprehensive collection of AI prompts tailored for different software enginee
 - **Junior Developers**: Start with basic setup and component/API development prompts
 - **Mid-Level Developers**: Focus on architecture, testing, and optimization prompts
 - **Senior Developers**: Use advanced patterns, performance, and system design prompts
+- **Architects**: Use blockchain architecture and system design prompts
 - **Designers**: Begin with prototype and component prompts, advance to design systems
 - **Test Engineers**: Start with framework setup, progress to advanced testing patterns
 - **Product Managers**: Begin with user research and prototype prompts, advance to strategy
+- **HR Managers**: Start with job description creation, advance to analytics and compliance
 
 ## Universal Prompts for All Roles
 
-### 1. Code Review and Quality
+### 1. Effective Communication Check
 ```
-Review this code for:
-- Best practices adherence
-- Security vulnerabilities
-- Performance issues
-- Code maintainability
-- Documentation quality
+Using the CLEAR framework, help me structure this request:
+Context: [Current situation and environment]
+Language: [Technical terms and scope]
+Expectations: [What I want as output]
+Actions: [Specific things to do]
+Results: [How I'll validate success]
 
-[paste code]
-
-Provide specific recommendations for improvement.
+My current request: [Your original question/need]
 ```
 
-### 2. Architecture Design
+### 2. Progressive Problem Solving
 ```
-Design a [system type] architecture for [use case] with these requirements:
-- [Requirement 1]
-- [Requirement 2]
-- [Requirement 3]
+Let's use progressive disclosure to solve this step by step:
 
-Consider scalability, maintainability, and performance. Include technology recommendations and trade-offs.
-```
+High-level question: [Your main challenge]
 
-### 3. Debugging Assistant
-```
-Help me debug this issue:
-Problem: [describe the problem]
-Expected behavior: [what should happen]
-Actual behavior: [what's happening]
-Code context: [relevant code snippets]
-Error messages: [any error messages]
-
-Provide step-by-step debugging approach and potential solutions.
+Based on your response, I'll ask follow-up questions to drill down into:
+- Implementation details
+- Edge cases and error handling
+- Testing and validation approaches
+- Performance and optimization considerations
 ```
 
-### 4. Documentation Generation
+### 3. Context-Rich Code Review
 ```
-Generate comprehensive documentation for this [component/function/API]:
-[paste code]
+CODE REVIEW REQUEST using structured communication:
 
-Include:
-- Purpose and functionality
-- Parameters and return values
-- Usage examples
-- Edge cases and limitations
-- Integration guidelines
+PURPOSE: [What this code accomplishes]
+CONTEXT: [Technology stack and constraints]
+CHANGES: [Summary of modifications]
+CONCERNS: [Specific areas of uncertainty]
+FOCUS: [What to pay attention to]
+
+[CODE BLOCK]
+
+Specific questions:
+1. [Technical concern #1]
+2. [Performance/security question]
+3. [Maintainability consideration]
 ```
 
-### 5. Test Case Generation
+### 4. Collaborative Architecture Discussion
 ```
-Generate comprehensive test cases for this [component/function]:
-[paste code]
+COLLABORATIVE ARCHITECTURE SESSION:
+Let's work together on: [System/component design challenge]
 
-Include:
-- Unit tests for core functionality
-- Edge case testing
-- Error scenario testing
-- Integration tests if applicable
-- Performance tests if relevant
+My current thinking:
+- Approach: [How I'm considering solving it]
+- Constraints: [Technical and business limitations]
+- Concerns: [What worries me about this approach]
+- Unknowns: [Areas where I need guidance]
 
-Use [testing framework] and follow best practices.
+Please:
+- Challenge my assumptions
+- Suggest alternative approaches
+- Point out potential issues I haven't considered
+- Help me think through edge cases and failure scenarios
+```
+
+### 5. Structured Debugging Session
+```
+DEBUGGING SESSION using systematic approach:
+
+PROBLEM: [Clear problem statement]
+ENVIRONMENT: [Technical context and setup]
+SYMPTOMS: [What's actually happening]
+EXPECTED: [What should happen instead]
+INVESTIGATION: [What I've already tried]
+HYPOTHESIS: [What I think might be wrong]
+
+CODE CONTEXT:
+[Relevant code sections]
+
+ASSISTANCE NEEDED:
+- Logic review and reasoning validation
+- Alternative debugging strategies
+- Tool recommendations
+- Pattern recognition from similar issues
 ```
 
 ## Cross-Role Collaboration Prompts
@@ -213,6 +272,34 @@ Include:
 - Risk assessment and mitigation strategies
 ```
 
+### HR-Engineering Collaboration
+```
+Create technical hiring strategy for [engineering role] that aligns HR and engineering needs:
+Role requirements: [technical skills and experience needed]
+Team dynamics: [cultural fit and collaboration needs]
+Growth trajectory: [career development and advancement]
+
+Include:
+- Technical assessment design and evaluation criteria
+- Interview process with engineering team involvement
+- Onboarding plan with technical mentorship
+- Performance evaluation and career development framework
+```
+
+### Blockchain-Traditional Development Integration
+```
+Create integration strategy between blockchain and traditional systems for [use case]:
+Blockchain requirements: [decentralization, security, transparency needs]
+Traditional system constraints: [existing infrastructure, compliance, performance]
+User experience goals: [seamless interaction, familiar interfaces]
+
+Include:
+- Hybrid architecture design with on-chain and off-chain components
+- API design for blockchain integration
+- User authentication and wallet management
+- Data synchronization and consistency strategies
+```
+
 ### DevOps-Development Integration
 ```
 Create deployment strategy for [application] with:
@@ -263,6 +350,22 @@ Include:
 6. **Testing**: Use Test Engineer prompts for comprehensive testing
 7. **Integration**: Use cross-role collaboration prompts
 8. **Deployment**: Use DevOps prompts for deployment strategy
+
+### Blockchain Product Development
+1. **Research Phase**: Use Product Manager user research prompts
+2. **Architecture Phase**: Use Blockchain Architect system design prompts
+3. **Smart Contract Development**: Use Blockchain Architect smart contract prompts
+4. **Frontend Integration**: Use Frontend development with Web3 integration
+5. **Testing Phase**: Use Test Engineer prompts adapted for blockchain testing
+6. **Security Audit**: Use Blockchain Architect security framework prompts
+7. **Launch Phase**: Use Product Manager go-to-market prompts
+
+### Hiring and Team Building
+1. **Role Definition**: Use HR Manager job description prompts
+2. **Technical Assessment**: Use role-specific technical prompts for evaluation
+3. **Interview Process**: Use HR Manager interview design prompts
+4. **Onboarding**: Use HR Manager onboarding prompts with technical mentorship
+5. **Performance Management**: Use role-specific performance evaluation prompts
 
 ### Product Development Cycle
 1. **Research Phase**: Use Product Manager user research prompts
