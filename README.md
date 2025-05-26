@@ -1,52 +1,155 @@
 # AI Coding Prompt Guides
 
-This repository contains two comprehensive Markdown guides designed to help developers
-learn to code using AI and craft effective AI-driven coding prompts.
+This repository contains comprehensive Markdown guides designed to help developers
+learn to code using AI and craft effective AI-driven coding prompts tailored to specific job roles and technologies.
 
 ## Guides
 
-- [LearnToCode.md](LearnToCode.md): A curated collection of AI prompts to help you learn programming
+### Job-Specific Prompt Guides
+- **[Job-Specific Prompts Index](job-specific-prompts-index.md)**: Complete index of role-based prompt guides
+- **[Frontend React/Next.js Engineer](frontend-react-nextjs-prompts.md)**: Specialized prompts for React and Next.js developers
+- **[Rust Backend Engineer (RIG + Actix-web)](rust-backend-engineer-prompts.md)**: Comprehensive guide for Rust backend development with AI integration
+- **[Node.js Sails.js Backend Engineer](nodejs-sailsjs-backend-prompts.md)**: Complete guide for Node.js Sails.js framework development
+- **[UI Designer (Figma)](ui-designer-figma-prompts.md)**: Complete guide for UI Designers using Figma for prototypes and design systems
+- **[Test Engineer (Pytest)](test-engineer-pytest-prompts.md)**: Comprehensive guide for Test Engineers using pytest framework
+- **[Product Manager](product-manager-prompts.md)**: Comprehensive guide for Product Managers covering prototypes, research, and strategy
+
+### General Coding Guides
+- **[LearnToCode.md](LearnToCode.md)**: A curated collection of AI prompts to help you learn programming
   concepts, write code, maintain quality, troubleshoot issues, and deepen your
   understanding of core software engineering topics. Includes a glossary of terms.
-- [ultimate-coding-prompt-guide.md](ultimate-coding-prompt-guide.md): An index to scenario-specific prompt guides. See:
+- **[ultimate-coding-prompt-guide.md](ultimate-coding-prompt-guide.md)**: An index to scenario-specific prompt guides:
   - [Writing New Code](writing-new-code.md)
   - [Modifying Existing Code](modifying-existing-code.md)
   - [Troubleshooting](troubleshooting.md)
   - [Learning To Code](learning-to-code-guide.md)
 
+## Quick Start by Role
+
+### Frontend Developers (React/Next.js)
+```bash
+# Start with the Frontend React/Next.js guide
+open frontend-react-nextjs-prompts.md
+```
+Perfect for: Component development, state management, Next.js features, performance optimization, testing
+
+### Backend Developers (Rust)
+```bash
+# Start with the Rust Backend guide
+open rust-backend-engineer-prompts.md
+```
+Perfect for: Actix-web development, RIG AI integration, database setup, authentication, API design
+
+### Backend Developers (Node.js Sails.js)
+```bash
+# Start with the Node.js Sails.js guide
+open nodejs-sailsjs-backend-prompts.md
+```
+Perfect for: Sails.js MVC architecture, Waterline ORM, real-time features, RESTful APIs, Socket.io
+
+### UI Designers (Figma)
+```bash
+# Start with the UI Designer Figma guide
+open ui-designer-figma-prompts.md
+```
+Perfect for: Interactive prototypes, design systems, component design, accessibility, design handoff
+
+### Test Engineers (Pytest)
+```bash
+# Start with the Test Engineer Pytest guide
+open test-engineer-pytest-prompts.md
+```
+Perfect for: Test automation, unit/integration testing, UI testing, performance testing, CI/CD integration
+
+### Product Managers
+```bash
+# Start with the Product Manager guide
+open product-manager-prompts.md
+```
+Perfect for: Prototype creation, user research, feature planning, market analysis, product strategy
+
+### General Development
+```bash
+# Start with the general coding guides
+open ultimate-coding-prompt-guide.md
+open LearnToCode.md
+```
+Perfect for: Learning fundamentals, general coding tasks, troubleshooting
+
 ## Getting Started
 
-1. Clone this repository:
+1. **Choose your guide based on your role**:
+   - Browse the [Job-Specific Prompts Index](job-specific-prompts-index.md) to find guides tailored to your technology stack and responsibilities
+   - Use general guides for learning fundamentals or cross-cutting concerns
+
+2. **Clone this repository**:
    ```bash
    git clone https://github.com/<USERNAME>/<REPO>.git
    cd <REPO>
    ```
-2. Open the guides in your preferred Markdown viewer or editor:
-   - [LearnToCode.md](LearnToCode.md)
-   - [ultimate-coding-prompt-guide.md](ultimate-coding-prompt-guide.md)
+
+3. **Open the relevant guides** in your preferred Markdown viewer or editor
 
 ## Usage
 
 Copy and paste the prompts from these guides into your AI coding assistant (e.g., ChatGPT,
 Claude Sonnet, GitHub Copilot) to accelerate learning, development, and troubleshooting.
 
-## Changelog
+### Example Workflow
+1. **Identify your role and tech stack** using the job-specific index
+2. **Find relevant prompts** for your current task
+3. **Customize the prompts** with your specific requirements
+4. **Use with your AI assistant** to generate code, solve problems, or learn concepts
 
+## What's New
+
+### Job-Specific Guides
+- **NEW**: [UI Designer Figma Guide](ui-designer-figma-prompts.md) - 30 comprehensive prompts covering interactive prototypes, design systems, component design, responsive layouts, accessibility, and design handoff
+- **NEW**: [Test Engineer Pytest Guide](test-engineer-pytest-prompts.md) - 33 specialized prompts for pytest framework, test automation, unit/integration testing, UI testing, performance testing, and CI/CD integration
+- **NEW**: [Product Manager Guide](product-manager-prompts.md) - 30 comprehensive prompts covering prototype development, user research, feature planning, market analysis, product strategy, and stakeholder communication
+- **NEW**: [Node.js Sails.js Backend Engineer Guide](nodejs-sailsjs-backend-prompts.md) - 33 specialized prompts for Sails.js development, Waterline ORM, real-time features, and deployment
+- **NEW**: [Frontend React/Next.js Engineer Guide](frontend-react-nextjs-prompts.md) - 23 specialized prompts covering component development, Next.js features, performance optimization, and testing
+- **NEW**: [Rust Backend Engineer Guide](rust-backend-engineer-prompts.md) - 32 comprehensive prompts for Actix-web, RIG integration, database management, and deployment
+- **NEW**: [Job-Specific Index](job-specific-prompts-index.md) - Central hub for all role-based guides with selection guidance
+
+### Recent Updates
 - ultimate-coding-prompt-guide.md: Updated initial prompt to a robust feature prompt template with clear requirements, best practices, error handling, and unit tests.
- 
 - ultimate-coding-prompt-guide.md: Added Next.js-specific frontend prompt template with SSR/SSG, dynamic routing, and testing guidelines.
-
 - ultimate-coding-prompt-guide.md: Split the monolithic guide into four scenario-specific files (`writing-new-code.md`, `modifying-existing-code.md`, `troubleshooting.md`, `learning-to-code-guide.md`), and refactored `ultimate-coding-prompt-guide.md` into an index linking to them.
 
 ## Contributing
 
 Contributions, issues, and suggestions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-name`).
-3. Make your changes and commit them.
-4. Push to the branch and open a pull request.
+
+### Adding New Job-Specific Guides
+1. Follow the format established in existing job-specific guides
+2. Include role-specific scenarios and technology-focused prompts
+3. Provide both template and example prompts
+4. Add best practices and workflow guidance
+
+### General Contributions
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-name`)
+3. Make your changes and commit them
+4. Push to the branch and open a pull request
 
 Please follow the existing style and guidelines when adding or modifying prompts.
+
+## Roadmap
+
+### Upcoming Job-Specific Guides
+- Python Backend Engineer (Django/FastAPI)
+- DevOps Engineer (Docker, Kubernetes, CI/CD)
+- Mobile Developer (React Native/Flutter)
+- Data Engineer (Python, SQL, ETL pipelines)
+- Machine Learning Engineer (Python, TensorFlow, PyTorch)
+- UX/UI Designer (Design systems, prototyping, user research)
+
+### Planned Features
+- Interactive prompt builder
+- Technology-specific prompt collections
+- Integration examples with popular AI assistants
+- Video tutorials for complex workflows
 
 ## License
 
