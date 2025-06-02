@@ -211,9 +211,9 @@ Use appropriate testing tools and provide optimization recommendations.
 
 ## UI/UX Implementation
 
-### 13. Responsive Design Implementation
+### 13. Advanced Layout and Responsive Design
 
-**Prompt:**
+**Prompt (Mockup to Responsive Component):**
 ```
 Convert this design mockup to a responsive React component:
 [describe design or paste image]
@@ -224,6 +224,53 @@ Requirements:
 - Use [CSS framework] for styling
 - Ensure accessibility compliance (WCAG 2.1 AA)
 - Include smooth animations and transitions
+```
+
+**Prompt Template (Complex Layout Implementation):**
+```
+You are a master of CSS and React. Create a Next.js component that implements a [specific complex layout, e.g., 'responsive masonry grid', 'sidebar layout with collapsible sections', 'dashboard with draggable and resizable widgets'].
+Requirements:
+- Use [CSS Grid / Flexbox / combination] for the primary layout structure.
+- Implement advanced alignment techniques for [specific alignment challenge, e.g., 'vertically centering dynamic height content', 'justifying items in a complex grid'].
+- Ensure the layout is fully responsive across [list breakpoints].
+- [Optional: Add a specific feature like 'support for container queries for child elements' or 'integration with a state management solution for layout preferences'].
+- Write clean, maintainable TypeScript and [CSS Modules / Tailwind CSS / Styled Components] for styling.
+- Explain the rationale behind your layout choices and any trade-offs made.
+```
+
+**Example (Complex Layout Implementation):**
+```
+You are a master of CSS and React. Create a Next.js page component that implements a responsive dashboard layout.
+Requirements:
+- A fixed sidebar (250px width on desktop, collapsible on tablet/mobile).
+- A main content area next to the sidebar.
+- The main content area should use CSS Grid to display multiple info cards that automatically adjust their column span based on available width (e.g., 1 column on mobile, 2 on tablet, 3-4 on desktop).
+- Cards should have consistent spacing and alignment.
+- Implement this using Next.js, TypeScript, and Tailwind CSS.
+- Ensure the sidebar collapse mechanism is accessible and clearly indicated.
+```
+
+**Prompt Template (Container Queries):**
+```
+You are a cutting-edge CSS and React developer. Create a Next.js component that demonstrates the use of CSS Container Queries to achieve a truly modular and responsive design.
+Requirements:
+- The component should adapt its internal layout or styling based on its allocated width, independent of the viewport.
+- Provide at least two distinct visual states triggered by different container widths.
+- Example scenario: A card component that switches from a vertical layout to a horizontal layout when its container is wide enough.
+- Use modern CSS practices and TypeScript.
+- Explain the setup for container queries (e.g., `container-type`, `container-name`) and how they are applied.
+- Discuss current browser support and any necessary considerations for fallbacks or polyfills.
+```
+
+**Prompt Template (CSS Subgrid):**
+```
+You are a CSS Grid expert. Design a Next.js component that effectively utilizes CSS Subgrid to manage alignment and structure within a nested grid layout.
+Requirements:
+- The component should feature a parent grid and at least one child element that itself becomes a grid and uses `subgrid` for its rows and/or columns.
+- Clearly demonstrate how subgrid helps align items in the nested grid with the main parent grid tracks.
+- Provide a comparative explanation or example of how this layout might be more complex or less precise without subgrid.
+- Use Next.js, TypeScript, and [CSS Modules / Tailwind CSS / Styled Components].
+- Discuss browser support for subgrid and suggest fallback strategies for older browsers.
 ```
 
 ### 14. Form Implementation
@@ -240,22 +287,91 @@ Create a complex form component for [purpose] with:
 Use React Hook Form and TypeScript.
 ```
 
-### 15. Animation Implementation
+### 15. Advanced Animation and Micro-interactions
 
-**Prompt:**
+**Prompt Template:**
 ```
-Implement smooth animations for [component/interaction] using [animation library]:
-- [Animation 1]
-- [Animation 2]
-- [Animation 3]
-Ensure animations are performant, respect user preferences (prefers-reduced-motion), and enhance UX.
+You are a UI animation specialist. Implement [specific advanced animation, e.g., 'a choreographed entrance animation for a list of items', 'a complex SVG path animation', 'physics-based micro-interactions on a button/card', 'a shared layout transition between routes'] in a React/Next.js component using [Framer Motion / GSAP / React Spring / Lottie].
+Requirements:
+- The animation should be [describe desired effect, e.g., 'smooth and performant (60fps)', 'triggered on scroll/hover/click/mount/route change', 'sequenced with precise timing and easing'].
+- Address accessibility: ensure it respects `prefers-reduced-motion`.
+- Optimize for performance, considering bundle size of the animation library and repaint/reflow costs.
+- Provide clean, well-structured code with TypeScript, isolating animation logic where possible.
+- Explain how to customize parameters (e.g., duration, delay, easing functions) or extend the animation.
+```
+
+**Example:**
+```
+You are a UI animation specialist using Framer Motion. Implement a 'staggered list item entrance' animation for a dynamically loaded list of items in a Next.js component.
+Requirements:
+- When the list items appear (e.g., on page load or after data fetching), they should animate in one by one with a slight delay between each.
+- The entrance animation for each item should combine opacity (from 0 to 1) and a vertical slide (e.g., from 20px below to its final position).
+- The animation should be smooth, engaging, and use appropriate easing functions.
+- Ensure it respects the `prefers-reduced-motion` media query (e.g., by disabling or simplifying animations).
+- The component should accept the list items as props and render them.
+- Provide clean, well-structured code with TypeScript and Framer Motion.
+- Include comments explaining the key parts of the animation setup (e.g., `staggerChildren`, `variants`).
+```
+
+**Prompt Template (Advanced Scroll-Triggered Animations):**
+```
+You are a web animation specialist. Implement sophisticated scroll-triggered animations for a section in a Next.js page using [Framer Motion / GSAP / Intersection Observer API with custom logic].
+Choose one or combine the following effects:
+- Parallax scrolling for background or foreground elements.
+- Staggered reveal animations for a list of items as they enter the viewport.
+- An element that animates along a path or changes properties (e.g., opacity, scale, rotation) based on scroll progress within its parent container.
+Requirements:
+- Animations must be smooth, performant (prioritizing `transform` and `opacity`), and avoid jank.
+- Implement `prefers-reduced-motion` detection to disable or simplify animations.
+- Ensure that the scroll listeners or observers are efficiently managed and cleaned up to prevent memory leaks.
+- Provide well-structured TypeScript code, clearly separating animation logic.
+- Explain any calculations or concepts used (e.g., normalizing scroll progress, setting up Intersection Observer thresholds).
+```
+
+### 16. Design System Development and Theming
+
+**Prompt Template (Design Tokens):**
+```
+You are an expert React/Next.js developer specializing in scalable frontend architectures. Outline a strategy for establishing and managing design tokens for a new, large-scale Next.js project using [chosen technology, e.g., CSS Custom Properties, Tailwind CSS theme configuration, Styled System, Vanilla Extract].
+Address the following:
+- Token categories (e.g., colors, typography, spacing, radii, shadows, motion).
+- Naming conventions and structure (e.g., global, alias, component-specific tokens).
+- How to define and consume these tokens within React components.
+- Strategy for theming (e.g., light/dark mode, brand themes) using these tokens.
+- Tooling recommendations for managing and documenting tokens (e.g., Style Dictionary, Zeroheight).
+- How TypeScript can be used to ensure type safety for tokens.
+Provide a small code example of defining a few tokens and using them in a simple component.
+```
+
+**Example (Dynamic Theming):**
+```
+You are an expert React/Next.js developer. Implement a dynamic theming system (light and dark modes) for a Next.js application using [Context API and CSS Custom Properties / Styled Components' ThemeProvider / Tailwind CSS dark mode variant].
+Requirements:
+- Define a basic set of theme variables for colors (background, text, primary, secondary) for both light and dark themes.
+- Create a mechanism to toggle between themes (e.g., a button or a hook `useTheme`).
+- The selected theme should persist across page loads (e.g., using localStorage).
+- Demonstrate the theming with a sample React component whose appearance changes based on the active theme.
+- Ensure the solution is type-safe using TypeScript.
+- Explain how new components can subscribe to theme changes.
+```
+
+**Prompt Template (Accessibility in Dynamic Theming):**
+```
+You are an accessibility (a11y) and UI design expert. For a Next.js application that supports dynamic theming (e.g., light, dark, high-contrast modes), provide comprehensive guidelines and a checklist to ensure the theming system is fully accessible.
+Address the following critical areas:
+- **Color Contrast:** Minimum WCAG AA/AAA contrast ratios for text, interactive elements, icons, and graphics across all themes. How to test and enforce this (e.g., tools, automated checks).
+- **Focus Indicators:** Ensuring focus indicators are highly visible and adapt correctly to different themes.
+- **Semantic HTML & ARIA:** How theming might impact ARIA attributes or semantic meaning, and how to ensure consistency.
+- **User Preferences:** Respecting operating system level theme preferences (e.g., via `prefers-color-scheme`).
+- **Testing Strategy:** Specific testing steps for theme-related accessibility, including keyboard navigation and screen reader checks across themes.
+- Provide an example of a problematic CSS/style snippet in a multi-theme setup and how to fix it for accessibility.
 ```
 
 ---
 
 ## API Integration
 
-### 16. Data Fetching with React Query
+### 17. Data Fetching with React Query
 
 **Prompt:**
 ```
@@ -268,7 +384,7 @@ Set up React Query (TanStack Query) for [API endpoint] with:
 Include TypeScript types for API responses.
 ```
 
-### 17. Real-time Data with WebSockets
+### 18. Real-time Data with WebSockets
 
 **Prompt:**
 ```
@@ -284,7 +400,7 @@ Implement WebSocket connection for [real-time feature] that:
 
 ## Debugging & Troubleshooting
 
-### 18. Performance Debugging
+### 19. Performance Debugging
 
 **Prompt:**
 ```
@@ -299,7 +415,7 @@ Analyze:
 Provide specific optimization recommendations.
 ```
 
-### 19. Build Error Resolution
+### 20. Build Error Resolution
 
 **Prompt:**
 ```
@@ -313,7 +429,7 @@ Help me:
 - Update configuration if needed
 ```
 
-### 20. Runtime Error Debugging
+### 21. Runtime Error Debugging
 
 **Prompt:**
 ```
@@ -333,7 +449,7 @@ Provide:
 
 ## Advanced Patterns
 
-### 21. Compound Component Pattern
+### 22. Compound Component Pattern
 
 **Prompt:**
 ```
@@ -345,7 +461,7 @@ Create a compound component for [UI element] that:
 - Follows accessibility best practices
 ```
 
-### 22. Render Props Pattern
+### 23. Render Props Pattern
 
 **Prompt:**
 ```
@@ -357,7 +473,7 @@ Implement a render props component for [functionality] that:
 - Is reusable across different UI implementations
 ```
 
-### 23. Higher-Order Component (HOC)
+### 24. Higher-Order Component (HOC)
 
 **Prompt:**
 ```
