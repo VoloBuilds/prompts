@@ -29,3 +29,11 @@ Used to review the successful completion of a plan in a separate chat (and yes, 
 @code_review.md
 @0001_PLAN.md
 ```
+
+## Documentation Writing
+Used to create comprehensive documentation for the plan, review, and implementation.
+```
+@write_docs.md
+@0001_PLAN.md
+@0001_REVIEW.md
+```
